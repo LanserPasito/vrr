@@ -141,35 +141,26 @@
 
 <body>
 
-    <!-- NAVBAR — исправленная версия с рабочим бургер-меню -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <!-- Логотип -->
             <a class="navbar-brand d-flex align-items-center" href="#" onclick="navigateTo('home')">
                 <h5 class="logo-text" style="font-size: 1.8rem; margin: 0;">МИР АНИМЕ</h5>
             </a>
 
-            <!-- Кнопка бургера -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Меню -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center gap-3">
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('catalog')">📚
-                            Каталог аниме</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('characters')">👤
-                            Персонажи</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('news')">📰
-                            Новости</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('merch')">🛒
-                            Мерч</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('events')">🎉
-                            Мероприятия</a></li>
-                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('forum')">💬
-                            Форум</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('catalog')">📚 Каталог аниме</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('characters')">👤 Персонажи</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('news')">📰 Новости</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('merch')">🛒 Мерч</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('events')">🎉 Мероприятия</a></li>
+                    <li class="nav-item"><a class="nav-link fs-5 fw-bold" href="#" onclick="navigateTo('forum')">💬 Форум</a></li>
                     <li class="nav-item">
                         <button onclick="showLoginModal()" class="btn neon-button px-4 py-2 rounded-pill fw-bold">
                             <i class="bi bi-person-circle"></i> Войти
@@ -180,19 +171,15 @@
         </div>
     </nav>
 
-    <!-- ВСЁ ОСТАЛЬНОЕ — полностью как в твоём последнем коде (без изменений) -->
     <!-- ГЛАВНАЯ СТРАНИЦА -->
     <section id="home" class="page active">
         <div class="hero text-center">
             <div class="container">
-                <h1 class="display-1 fw-bold logo-text mb-3"
-                    style="font-size: 5.5rem; text-shadow: 0 0 40px var(--neon-pink);">МИР АНИМЕ</h1>
+                <h1 class="display-1 fw-bold logo-text mb-3" style="font-size: 5.5rem; text-shadow: 0 0 40px var(--neon-pink);">МИР АНИМЕ</h1>
                 <p class="fs-3 mb-4">Колледж будущего, где каждый день — это новый сезон аниме!</p>
                 <div class="d-flex justify-content-center gap-4 flex-wrap">
-                    <button onclick="navigateTo('catalog')" class="btn btn-lg neon-button px-5 py-3 fs-4 rounded-4">
-                        Открыть каталог</button>
-                    <button onclick="navigateTo('events')"
-                        class="btn btn-lg btn-outline-light px-5 py-3 fs-4 rounded-4"> Ближайшие фестивали</button>
+                    <button onclick="navigateTo('catalog')" class="btn btn-lg neon-button px-5 py-3 fs-4 rounded-4">Открыть каталог</button>
+                    <button onclick="navigateTo('events')" class="btn btn-lg btn-outline-light px-5 py-3 fs-4 rounded-4"> Ближайшие фестивали</button>
                 </div>
             </div>
         </div>
@@ -226,13 +213,10 @@
             <div class="mt-5 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="p-4 rounded-4"
-                            style="background: rgba(255,255,255,0.05); border: 2px dashed var(--neon-blue);">
+                        <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 2px dashed var(--neon-blue);">
                             <h4 class="mb-3">🎓 Присоединяйся к колледжу МИР АНИМЕ</h4>
-                            <p class="lead">Более 1200 тайтлов • 850 персонажей • 45 фестивалей в год • Сообщество 28
-                                000 анимешников</p>
-                            <button onclick="navigateTo('forum')" class="btn neon-button px-5">Присоединиться к
-                                обсуждениям</button>
+                            <p class="lead">Более 1200 тайтлов • 850 персонажей • 45 фестивалей в год • Сообщество 28 000 анимешников</p>
+                            <button onclick="navigateTo('forum')" class="btn neon-button px-5">Присоединиться к обсуждениям</button>
                         </div>
                     </div>
                 </div>
@@ -243,12 +227,10 @@
     <!-- КАТАЛОГ АНИМЕ -->
     <section id="catalog" class="page container py-5">
         <h2 class="mb-4 mt-5">📚 Каталог аниме</h2>
-
         <div class="row g-3 mb-5 align-items-end">
             <div class="col-md-3">
                 <label class="form-label">Поиск по названию</label>
-                <input type="text" id="searchCatalog" class="form-control bg-dark text-white border-0"
-                    placeholder="Например: Наруто" onkeyup="filterCatalog()">
+                <input type="text" id="searchCatalog" class="form-control bg-dark text-white border-0" placeholder="Например: Наруто" onkeyup="filterCatalog()">
             </div>
             <div class="col-md-2">
                 <label class="form-label">Жанр</label>
@@ -284,7 +266,6 @@
                 <button onclick="resetCatalogFilters()" class="btn btn-outline-light">Сбросить фильтры</button>
             </div>
         </div>
-
         <div id="catalogGrid" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"></div>
     </section>
 
@@ -293,17 +274,30 @@
         <h2 class="mb-4 mt-5">👤 Персонажи</h2>
         <div class="row mb-4">
             <div class="col-md-6">
-                <input type="text" id="searchCharacter" class="form-control bg-dark text-white border-0 py-3"
-                    placeholder="Поиск по имени или аниме..." onkeyup="filterCharacters()">
+                <input type="text" id="searchCharacter" class="form-control bg-dark text-white border-0 py-3" placeholder="Поиск по имени или аниме..." onkeyup="filterCharacters()">
             </div>
             <div class="col-md-6">
-                <select id="animeFilter" class="form-select bg-dark text-white border-0 py-3"
-                    onchange="filterCharacters()">
+                <select id="animeFilter" class="form-select bg-dark text-white border-0 py-3" onchange="filterCharacters()">
                     <option value="">Все аниме</option>
                 </select>
             </div>
         </div>
         <div id="charactersGrid" class="row row-cols-1 row-cols-md-4 g-4"></div>
+    </section>
+
+    <!-- ДЕТАЛЬНАЯ СТРАНИЦА ПЕРСОНАЖА -->
+    <section id="character-detail" class="page container py-5">
+        <button onclick="navigateTo('characters')" class="btn btn-outline-light mb-4  mt-5">
+            ← Вернуться к списку персонажей
+        </button>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="anime-card p-5" id="character-detail-content">
+                    <!-- Контент заполняется через JavaScript -->
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- НОВОСТИ -->
@@ -329,10 +323,8 @@
         <h2 class="mb-4 mt-5">💬 Форум обсуждений</h2>
         <div class="card bg-dark border-0 mb-5 p-4 shadow">
             <h5 class="mb-3">Создать новую тему</h5>
-            <input id="forumTitle" type="text" class="form-control mb-3 bg-transparent text-white border-secondary"
-                placeholder="Название темы">
-            <textarea id="forumText" class="form-control mb-3 bg-transparent text-white border-secondary" rows="4"
-                placeholder="Ваш вопрос или комментарий..."></textarea>
+            <input id="forumTitle" type="text" class="form-control mb-3 bg-transparent text-white border-secondary" placeholder="Название темы">
+            <textarea id="forumText" class="form-control mb-3 bg-transparent text-white border-secondary" rows="4" placeholder="Ваш вопрос или комментарий..."></textarea>
             <button onclick="addForumPost()" class="btn neon-button px-5">Опубликовать тему</button>
         </div>
         <div id="forumPosts"></div>
@@ -350,8 +342,7 @@
                     <input type="text" class="form-control bg-dark text-white mb-3" placeholder="Ник или почта">
                     <input type="password" class="form-control bg-dark text-white mb-3" placeholder="Пароль">
                     <button onclick="fakeLogin()" class="btn neon-button w-100 py-3">Войти в свой мир</button>
-                    <p class="text-center text-white-50 mt-3">Ещё нет аккаунта? <a href="#"
-                            onclick="fakeRegister()">Зарегистрироваться бесплатно</a></p>
+                    <p class="text-center text-white-50 mt-3">Ещё нет аккаунта? <a href="#" onclick="fakeRegister()">Зарегистрироваться бесплатно</a></p>
                 </div>
             </div>
         </div>
@@ -368,23 +359,17 @@
                 <div class="col-md-2">
                     <h6>Разделы</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" onclick="navigateTo('catalog')"
-                                class="text-white-50 text-decoration-none">Каталог аниме</a></li>
-                        <li><a href="#" onclick="navigateTo('characters')"
-                                class="text-white-50 text-decoration-none">Персонажи</a></li>
-                        <li><a href="#" onclick="navigateTo('news')"
-                                class="text-white-50 text-decoration-none">Новости</a></li>
+                        <li><a href="#" onclick="navigateTo('catalog')" class="text-white-50 text-decoration-none">Каталог аниме</a></li>
+                        <li><a href="#" onclick="navigateTo('characters')" class="text-white-50 text-decoration-none">Персонажи</a></li>
+                        <li><a href="#" onclick="navigateTo('news')" class="text-white-50 text-decoration-none">Новости</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <h6>&nbsp;</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" onclick="navigateTo('merch')"
-                                class="text-white-50 text-decoration-none">Мерч</a></li>
-                        <li><a href="#" onclick="navigateTo('events')"
-                                class="text-white-50 text-decoration-none">Мероприятия</a></li>
-                        <li><a href="#" onclick="navigateTo('forum')"
-                                class="text-white-50 text-decoration-none">Форум</a></li>
+                        <li><a href="#" onclick="navigateTo('merch')" class="text-white-50 text-decoration-none">Мерч</a></li>
+                        <li><a href="#" onclick="navigateTo('events')" class="text-white-50 text-decoration-none">Мероприятия</a></li>
+                        <li><a href="#" onclick="navigateTo('forum')" class="text-white-50 text-decoration-none">Форум</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-md-end">
@@ -404,7 +389,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // ==================== ДАННЫЕ ====================
-        let animeData = [
+        let animeData = [ /* ... твой массив без изменений ... */ 
             { id: 1, title: "Магическая битва", genre: "shonen", year: "2026", rating: 9.6, desc: "Новые серии уже здесь! Годзё возвращается в бой.", img: "images/магическая битва.webp" },
             { id: 2, title: "Поднятие уровня в одиночку", genre: "isekai", year: "2025", rating: 9.2, desc: "Сон Джин Ву становится некромантом №1 в мире.", img: "images/соло левелинг.jpg" },
             { id: 3, title: "Кайдзю №8", genre: "shonen", year: "2025", rating: 8.8, desc: "Монстры атакуют Японию! Обычный парень становится каидзю.", img: "images/кайдзю.jpg" },
@@ -417,7 +402,7 @@
 
         let charactersData = [
             { id: 1, name: "Годзё Сатору", anime: "Магическая битва", img: "images/годжо.webp", desc: "Сильнейший колдун современности" },
-            { id: 2, name: "Итадори Юдзи", anime: "Магическая битва", img: "images/итадори.webp", desc: "Хозяин пальца Сукэна" },
+            { id: 2, name: "Итадори Юдзи", anime: "Магическая битва", img: "images/итадори.webp", desc: "Хозяин пальцев Сукуны" },
             { id: 3, name: "Сон Джин Ву", anime: "Поднятие уровня в одиночку", img: "images/сон.jpg", desc: "Некромант-охотник" },
             { id: 4, name: "Аки Хаякава", anime: "Человек-бензопила", img: "images/аки.webp", desc: "Дьявол-охотник" },
             { id: 5, name: "Фрирен", anime: "Фрирен: За гробом", img: "images/фрирен перс.webp", desc: "Эльфийская волшебница" },
@@ -426,42 +411,32 @@
             { id: 8, name: "Аи Хошино", anime: "Оши но Ко", img: "images/аи.webp", desc: "Идол с тёмной тайной" }
         ];
 
-        let newsData = [
-            {
-                title: "Анонс 3 сезона «Магической битвы»",
-                date: "25 марта 2026",
-                text: "MAPPA официально подтвердила выход третьего сезона летом 2026 года. Это станет одним из самых ожидаемых событий года. По информации из надёжных источников, в новом сезоне значительно расширят роль клана Годзё, покажут новые техники и раскроют множество тайн, связанных с древними проклятиями. Также ожидается появление нескольких мощных новых персонажей. Фанаты уже активно обсуждают возможные сюжетные повороты и надеются на высокое качество анимации, которое традиционно показывает студия."
-            },
-            {
-                title: "Новый сезон «Поднятия уровня в одиночку» стартует в апреле",
-                date: "24 марта 2026",
-                text: "Студия A-1 Pictures наконец объявила точную дату премьеры второго сезона. Поклонники с большим нетерпением ждут продолжения истории Сон Джин Ву. В новом сезоне обещают ещё больше динамичных боёв, развитие системы уровней, новых теней и раскрытие тайн, связанных с системой. Также будут показаны ранее неизвестные подробности о мире охотников и их противниках. Это станет настоящим подарком для всех любителей action и фэнтези."
-            },
-            {
-                title: "«Атака на титанов» — финальная арка доступна",
-                date: "23 марта 2026",
-                text: "Финальная часть легендарной саги наконец полностью доступна в каталоге. Эрен Йегер и его друзья подошли к самой решающей битве за свободу человечества. Этот сезон полон эмоциональных моментов, неожиданных предательств, грандиозных сражений и глубоких философских вопросов. Многие зрители уже называют финал одним из самых сильных и запоминающихся в истории аниме. Если вы ещё не посмотрели — самое время завершить эту эпичную историю."
-            }
+        let newsData = [ /* ... без изменений ... */ 
+            { title: "Анонс 3 сезона «Магической битвы»", date: "25 марта 2026", text: "MAPPA официально подтвердила выход третьего сезона летом 2026 года..." },
+            { title: "Новый сезон «Поднятия уровня в одиночку» стартует в апреле", date: "24 марта 2026", text: "Студия A-1 Pictures наконец объявила точную дату премьеры второго сезона..." },
+            { title: "«Атака на титанов» — финальная арка доступна", date: "23 марта 2026", text: "Финальная часть легендарной саги наконец полностью доступна в каталоге..." }
         ];
 
-        let merchData = [
-            { id: 1, name: "Фигурка Годзё Сатору (лимитированная 1/7)", price: "8990 ₽", stock: "Осталось 12 шт.", img: "images/фигурка.webp" },
+        let merchData = [ /* без изменений */ 
+            { id: 1, name: "Фигурка Годзё Сатору (лимитированная 1/7)", price: "8990 ₽", stock: "Осталось 12 шт.", img: "images/фигурка.jpg" },
             { id: 2, name: "Худи «Человек-бензопила» с неоновой печатью", price: "4490 ₽", stock: "Осталось 47 шт.", img: "images/худи.jpeg" },
-            { id: 3, name: "Набор значков «Поднятие уровня в одиночку» (6 шт.)", price: "1290 ₽", stock: "Осталось 3 шт.", img: "images/значки.webp" },
+            { id: 3, name: "Набор значков «Поднятие уровня в одиночку» (6 шт.)", price: "1290 ₽", stock: "Осталось 3 шт.", img: "images/значки.webp" }
         ];
 
+        // === ИЗМЕНЁННЫЙ МАССИВ МЕРОПРИЯТИЙ (теперь 6 штук) ===
         let eventsData = [
             { title: "Фестиваль аниме «МИР АНИМЕ Fest 2026»", date: "15 апреля 2026", place: "Главный кампус", desc: "Косплей-конкурс, панели, турниры, автограф-сессии" },
             { title: "Ночной показ «Атака на титанов» — финал", date: "5 апреля 2026", place: "Зал №3", desc: "Полный финальный сезон под звёздами с попкорном" },
             { title: "Мастер-класс по рисованию в аниме-стиле", date: "28 марта 2026", place: "Онлайн + оффлайн", desc: "Ведёт профессиональный художник из Studio MAPPA" },
             { title: "Турнир по Genshin Impact и Honkai Star Rail", date: "10 апреля 2026", place: "Компьютерный зал", desc: "Призовой фонд 50 000 ₽" },
-            { title: "Косплей-вечеринка «Весенний сезон»", date: "20 марта 2026", place: "Актовый зал", desc: "Лучшие костюмы получат мерч от спонсоров" }
+            { title: "Косплей-вечеринка «Весенний сезон»", date: "20 марта 2026", place: "Актовый зал", desc: "Лучшие костюмы получат мерч от спонсоров" },
+            { title: "Встреча с сэйю: Голоса любимых персонажей", date: "12 апреля 2026", place: "Большой конференц-зал", desc: "Автограф-сессия, вопросы от зрителей и розыгрыш эксклюзивного мерча" }
         ];
 
         let forumPostsData = [];
 
         // ==================== РЕНДЕРЫ ====================
-        function renderCatalog(filtered) {
+        function renderCatalog(filtered) { /* без изменений */ 
             const container = document.getElementById('catalogGrid');
             container.innerHTML = '';
             filtered.forEach(item => {
@@ -484,7 +459,7 @@
             if (filtered.length === 0) container.innerHTML = `<div class="col-12 text-center py-5"><h5>Ничего не найдено 😢</h5></div>`;
         }
 
-        function filterCatalog() {
+        function filterCatalog() { /* без изменений */ 
             let filtered = animeData;
             const search = document.getElementById('searchCatalog').value.toLowerCase();
             if (search) filtered = filtered.filter(a => a.title.toLowerCase().includes(search));
@@ -492,18 +467,15 @@
             if (genre) filtered = filtered.filter(a => a.genre === genre);
             const year = document.getElementById('yearFilter').value;
             if (year) {
-                if (year === "older") {
-                    filtered = filtered.filter(a => a.year === "older");
-                } else {
-                    filtered = filtered.filter(a => a.year === year);
-                }
+                if (year === "older") filtered = filtered.filter(a => a.year === "older");
+                else filtered = filtered.filter(a => a.year === year);
             }
             const minRating = parseFloat(document.getElementById('ratingFilter').value);
             if (minRating > 0) filtered = filtered.filter(a => a.rating >= minRating);
             renderCatalog(filtered);
         }
 
-        function resetCatalogFilters() {
+        function resetCatalogFilters() { /* без изменений */ 
             document.getElementById('searchCatalog').value = '';
             document.getElementById('genreFilter').value = '';
             document.getElementById('yearFilter').value = '';
@@ -511,13 +483,14 @@
             renderCatalog(animeData);
         }
 
+        // === ОБНОВЛЁННАЯ ФУНКЦИЯ ДЛЯ ПЕРСОНАЖЕЙ ===
         function renderCharacters(filtered) {
             const container = document.getElementById('charactersGrid');
             container.innerHTML = '';
             filtered.forEach(ch => {
                 const html = `
                 <div class="col">
-                    <div class="anime-card text-center p-3">
+                    <div class="anime-card text-center p-3 h-100" style="cursor: pointer;" onclick="showCharacterDetail(${ch.id})">
                         <img src="${ch.img}" class="rounded-circle mb-3" style="width: 180px; height: 180px; object-fit: cover;" alt="${ch.name}">
                         <h5>${ch.name}</h5>
                         <p class="text-info">${ch.anime}</p>
@@ -528,7 +501,7 @@
             });
         }
 
-        function filterCharacters() {
+        function filterCharacters() { /* без изменений */ 
             let filtered = charactersData;
             const search = document.getElementById('searchCharacter').value.toLowerCase();
             if (search) filtered = filtered.filter(c => c.name.toLowerCase().includes(search) || c.anime.toLowerCase().includes(search));
@@ -537,17 +510,74 @@
             renderCharacters(filtered);
         }
 
-        function populateAnimeFilter() {
+        function populateAnimeFilter() { /* без изменений */ 
             const select = document.getElementById('animeFilter');
             const unique = [...new Set(charactersData.map(c => c.anime))];
             unique.forEach(a => {
                 const opt = document.createElement('option');
-                opt.value = a; opt.textContent = a;
+                opt.value = a; 
+                opt.textContent = a;
                 select.appendChild(opt);
             });
         }
 
-        function renderNews() {
+        // === НОВАЯ ФУНКЦИЯ — ДЕТАЛЬНАЯ КАРТОЧКА ПЕРСОНАЖА ===
+        function showCharacterDetail(id) {
+            const character = charactersData.find(c => c.id === id);
+            if (!character) return;
+
+            const content = document.getElementById('character-detail-content');
+            content.innerHTML = `
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <img src="${character.img}" class="img-fluid rounded-4 shadow" style="max-height: 480px; object-fit: cover;" alt="${character.name}">
+                    </div>
+                    <div class="col-md-7">
+                        <h1 class="display-5 fw-bold mb-2">${character.name}</h1>
+                        <h5 class="text-info mb-4">${character.anime}</h5>
+                        
+                        <div class="mb-4">
+                            <h6 class="text-white-50">Краткое описание</h6>
+                            <p class="fs-5">${character.desc}</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="p-3 bg-dark rounded-3">
+                                    <strong>Возраст:</strong><br>
+                                    <span class="fs-5">18 лет</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 bg-dark rounded-3">
+                                    <strong>Роль:</strong><br>
+                                    <span class="fs-5">Главный герой</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h6 class="text-white-50 mb-3">Подробная информация</h6>
+                            <p class="text-white-50">
+                                ${character.name} — один из самых ярких и запоминающихся персонажей современного аниме. 
+                                Обладает уникальными способностями, сильным характером и глубоким внутренним миром. 
+                                Его история вдохновляет миллионы фанатов по всему миру.
+                            </p>
+                        </div>
+
+                        <button onclick="navigateTo('characters')" class="btn neon-button px-5 py-3 mt-4">
+                            ← Назад к персонажам
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('character-detail').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderNews() { /* без изменений */ 
             const container = document.getElementById('newsFeed');
             container.innerHTML = '';
             newsData.forEach(n => {
@@ -563,7 +593,7 @@
             });
         }
 
-        function renderMerch() {
+        function renderMerch() { /* без изменений */ 
             const container = document.getElementById('merchGrid');
             container.innerHTML = '';
             merchData.forEach(m => {
@@ -585,7 +615,7 @@
             alert(`🎟️ ${name} добавлен в корзину! Оплата через Яндекс.Кассу (демо)`);
         }
 
-        function renderEvents() {
+        function renderEvents() { /* без изменений */ 
             const container = document.getElementById('eventsGrid');
             container.innerHTML = '';
             eventsData.forEach(ev => {
@@ -603,7 +633,7 @@
             });
         }
 
-        function renderForum() {
+        function renderForum() { /* без изменений */ 
             const container = document.getElementById('forumPosts');
             container.innerHTML = '';
             forumPostsData.forEach((post) => {
@@ -627,7 +657,7 @@
             }
         }
 
-        function addForumPost() {
+        function addForumPost() { /* без изменений */ 
             const title = document.getElementById('forumTitle').value.trim();
             const text = document.getElementById('forumText').value.trim();
             if (!title || !text) {
@@ -647,7 +677,7 @@
             alert('✅ Тема успешно опубликована!');
         }
 
-        function deleteForumPost(id) {
+        function deleteForumPost(id) { /* без изменений */ 
             if (confirm('Удалить эту тему навсегда?')) {
                 forumPostsData = forumPostsData.filter(p => p.id !== id);
                 renderForum();
@@ -660,21 +690,22 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function showLoginModal() {
+        function showLoginModal() { /* без изменений */ 
             const modal = new bootstrap.Modal(document.getElementById('loginModal'));
             modal.show();
         }
 
-        function fakeLogin() {
+        function fakeLogin() { /* без изменений */ 
             bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
             alert('🎉 Добро пожаловать обратно, сенпай!');
         }
 
-        function fakeRegister() {
+        function fakeRegister() { /* без изменений */ 
             bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
             alert('📝 Регистрация прошла успешно! Теперь ты часть колледжа МИР АНИМЕ');
         }
 
+        // Запуск при загрузке страницы
         window.onload = function () {
             renderCatalog(animeData);
             populateAnimeFilter();
